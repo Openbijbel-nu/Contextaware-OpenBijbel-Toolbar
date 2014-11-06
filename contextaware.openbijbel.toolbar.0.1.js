@@ -24,23 +24,7 @@ var topbarelementname = "";
 // see: http://markdalgleish.com/2011/03/self-executing-anonymous-functions/
  (function (window, document, $, undefined) {
 
-$(function() {
-    $( "#biblereferencestray" ).resizable({
-      ghost: true
-    });
-});
 
-$("body").append("<div id='biblereferencestray'><br/><br/></div>");
-$( "#biblereferencestray" ).css({ 
-"position":"fixed",
-"left":"0px",
-"width":"20px",
-"top":"0px",
-"height": "300px",
-"border-left":"1px solid black",
-"background-color":"red",
-"color":"white",
-});
 
  	/**
  	 * For including scripts
@@ -62,6 +46,27 @@ $( "#biblereferencestray" ).css({
  	 	document.getElementsByTagName('head')[0].appendChild(s);
 
  	 }
+
+require('//code.jquery.com/jquery-1.10.2.js');
+require('//code.jquery.com/ui/1.11.2/jquery-ui.js');
+
+$(function() {
+    $( "#biblereferencestray" ).resizable({
+      ghost: true
+    });
+});
+
+$("body").append("<div id='biblereferencestray'><br/><br/></div>");
+$( "#biblereferencestray" ).css({ 
+"position":"fixed",
+"left":"0px",
+"width":"20px",
+"top":"0px",
+"height": "300px",
+"border-left":"1px solid black",
+"background-color":"red",
+"color":"white",
+});
 
 	 var BCVParserLoaded = false;
 	/**
