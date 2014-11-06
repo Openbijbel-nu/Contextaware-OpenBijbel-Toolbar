@@ -22,9 +22,6 @@ var topbarelementname = "";
 
 $(function() {
     $( "#biblereferencestray" ).resizable({
-      maxHeight: 450,
-      minHeight: 10,
-      minWidth: 900,
       ghost: true
     });
 });
@@ -37,7 +34,7 @@ $( "#biblereferencestray" ).css({
 "right":"0px",
 "height":"10x",
 "border-top":"1px solid black",
-"background":"red",
+"background-color":"red",
 "color":"white",
 });
 
