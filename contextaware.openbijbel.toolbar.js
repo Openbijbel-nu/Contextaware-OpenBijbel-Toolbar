@@ -248,13 +248,12 @@ var topbarelementname = "";
  	 */
  	function setupTopBar() {
  		// add the basics to the stickynotes top bar
- 		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");
+ 		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");   // CIP
 
- 		openBijbelToolBar = $("#balk-div .openbijbeltoolbar");
+ 		openBijbelToolBar = $(".openbijbeltoolbar");
 
  		// build the basic content of the toolbar
- 		var toolbarContent = 
-			'<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; NIV</div>'
+ 		var toolbarContent = '<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; NIV</div>'
 			+ '<div class="openbijbelknoppenarea">'
 				+ '<span class="openbijbelknoptoelichting">Tooltip vertaling: </span>'
 				+ '<span class="openbijbelknop vertalingkeus NIV" data-translation="NIV">NIV</span> '
