@@ -16,7 +16,7 @@ var topbarelementname = "";
         var currentwebsite = window.location.hostname;
 
         if(currentwebsite == "www.cip.nl") {
-              alert("Je bent nu op " + currentwebsite);
+              console.log("Je bent nu op " + currentwebsite);
               topbarelementname = "#balk-div";
         }
 
