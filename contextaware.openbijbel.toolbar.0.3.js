@@ -62,7 +62,7 @@ $( "#biblereferencestray" ).css({
 "color":"white",
 });
 
-$( "#biblereferencestray" ).resizable();
+
 	 var BCVParserLoaded = false;
 	/**
  	  * Loads the bcvparser script with a protocol independant URL
@@ -267,6 +267,8 @@ $( "#biblereferencestray" ).resizable();
  	 *	Build the top bar
  	 */
  	function setupTopBar() {
+ 		
+ 		$( "#biblereferencestray" ).resizable();
  		// add the basics to the stickynotes top bar
  		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");   // CIP
 
