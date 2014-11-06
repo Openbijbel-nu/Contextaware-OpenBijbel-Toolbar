@@ -32,7 +32,7 @@ $(function() {
 $("body").append("<div id='biblereferencestray'></div>");
 $( "#biblereferencestray" ).css({ 
 "position":"fixed",
-"bottom":"0px",
+"bottom":"10px",
 "left":"0px",
 "right":"0px",
 "height":"10x",
