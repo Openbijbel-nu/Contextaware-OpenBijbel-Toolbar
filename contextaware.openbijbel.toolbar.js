@@ -21,13 +21,20 @@ var topbarelementname = "";
         }
 
 $(function() {
-    $( "#biblereferencestray" ).resizable();
+    $( "#biblereferencestray" ).resizable({
+      maxHeight: 450,
+      minHeight: 10,
+      minWidth: 900,
+      ghost: true
+    });
 });
 
 $("body").append("<div id='biblereferencestray'></div>");
 $( "#biblereferencestray" ).css({ 
 "position":"fixed",
 "bottom":"0px",
+"left":"0px",
+"right":"0px",
 "height":"10x",
 "border-top":"1px solid black",
 "background":"red",
