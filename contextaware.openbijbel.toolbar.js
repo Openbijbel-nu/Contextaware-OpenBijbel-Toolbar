@@ -47,22 +47,6 @@ var topbarelementname = "";
 
  	 }
 
-require('//code.jquery.com/jquery-1.10.2.js');
-require('//code.jquery.com/ui/1.11.2/jquery-ui.js');
-
-$("body").append("<div id='biblereferencestray'><br/><br/></div>");
-$( "#biblereferencestray" ).css({ 
-"position":"fixed",
-"left":"0px",
-"width":"20px",
-"top":"0px",
-"height": "300px",
-"border-left":"1px solid black",
-"background-color":"red",
-"color":"white",
-});
-
-
 	 var BCVParserLoaded = false;
 	/**
  	  * Loads the bcvparser script with a protocol independant URL
@@ -267,8 +251,6 @@ $( "#biblereferencestray" ).css({
  	 *	Build the top bar
  	 */
  	function setupTopBar() {
- 		
- 		$( "#biblereferencestray" ).resizable();
  		// add the basics to the stickynotes top bar
  		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");   // CIP
 
