@@ -36,7 +36,7 @@ $( "#biblereferencestray" ).css({
 "left":"0px",
 "width":"20px",
 "top":"0px",
-"bottom": "0px",
+"height": "300px",
 "border-left":"1px solid black",
 "background-color":"red",
 "color":"white",
