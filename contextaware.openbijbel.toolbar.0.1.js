@@ -33,11 +33,11 @@ $(function() {
 $("body").append("<div id='biblereferencestray'><br/><br/></div>");
 $( "#biblereferencestray" ).css({ 
 "position":"fixed",
-"bottom":"50px",
 "left":"0px",
-"right":"0px",
-"height":"10x",
-"border-top":"1px solid black",
+"width":"20px",
+"top":"0px",
+"bottom": "0px",
+"border-left":"1px solid black",
 "background-color":"red",
 "color":"white",
 });
