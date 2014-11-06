@@ -248,9 +248,9 @@ var topbarelementname = "";
  	 */
  	function setupTopBar() {
  		// add the basics to the stickynotes top bar
- 		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");   // CIP
+ 		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");
 
- 		openBijbelToolBar = $(".navbar .openbijbeltoolbar");
+ 		openBijbelToolBar = $("#balk-div .openbijbeltoolbar");
 
  		// build the basic content of the toolbar
  		var toolbarContent = 
