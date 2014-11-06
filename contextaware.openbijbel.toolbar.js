@@ -11,6 +11,15 @@ console.log("v1.0");
 		}
 	};
 
+var topbarelementname = "";
+
+        var currentwebsite = window.location.hostname;
+
+        if(currentwebsite == "www.cip.nl") {
+              alert("Je bent nu op" + currentwebsite);
+              topbarelementname = "#balk-div";
+        }
+
 // using anonymous self executing function to protect the functions in their own scope
 // see: http://markdalgleish.com/2011/03/self-executing-anonymous-functions/
  (function (window, document, $, undefined) {
@@ -106,12 +115,6 @@ console.log("v1.0");
 
 //
 
-        var currentwebsite = window.location.hostname;
-
-        if(currentwebsite == "www.cip.nl") {
-              alert("Je bent nu op" + currentwebsite);
-        }
-
 		 // specifically for articles on CIP.nl - for testing
 	        var deorigineletekst = $(".bericht_voll").html();
 
@@ -192,7 +195,7 @@ console.log("v1.0");
  	 * Adds a Biblia embedment in the extra column
  	 */
 	function embedBiblia() {
-		var startVerse = $(".vers sup").first().text();
+//		var startVerse = $(".vers sup").first().text();
 //		alert(startVerse);
 		$(".OpenBijbelEmbeddedBiblia").html('<biblia:bible layout="minimal" resource="niv2011" width="100%" height="1200px" startingReference="' + startVerse + '"></biblia:bible>');
 		
@@ -214,7 +217,7 @@ console.log("v1.0");
  		);
 
 
-		embedBiblia();
+//		embedBiblia();
 
 		$('.openbijbelvertaling').text(openBijbelToolBar.find(".openbijbelvertalingnaam").text());
 
@@ -245,7 +248,7 @@ console.log("v1.0");
  	 */
  	function setupTopBar() {
  		// add the basics to the stickynotes top bar
- 		$(".navbar").prepend("<div class='openbijbeltoolbar'></div>");
+ 		$("#balk-div").prepend("<div class='openbijbeltoolbar'></div>");   // CIP
 
  		openBijbelToolBar = $(".navbar .openbijbeltoolbar");
 
@@ -353,8 +356,8 @@ console.log("v1.0");
  	 * This function gets executed after all is loaded. This gives a main entrypoint for the code
  	 */
  	function main() {
- 		showReferences();
  		setupTopBar();
+ 		showReferences();
  		
  		// choose default translation
  		chooseTranslation("NIV");
