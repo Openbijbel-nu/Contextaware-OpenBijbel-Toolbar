@@ -16,9 +16,23 @@ var topbarelementname = "";
         var currentwebsite = window.location.hostname;
 
         if(currentwebsite == "www.cip.nl") {
-              alert("Je bent nu op" + currentwebsite);
+              alert("Je bent nu op " + currentwebsite);
               topbarelementname = "#balk-div";
         }
+
+$(function() {
+    $( "#biblereferencestray" ).resizable();
+});
+
+$("body").append("<div id='biblereferencestray'></div>");
+$( "#biblereferencestray" ).css({ 
+"position":"fixed",
+"bottom":"0px",
+"height":"10x",
+"border-top":"1px solid black",
+"background":"red",
+"color":"white",
+});
 
 // using anonymous self executing function to protect the functions in their own scope
 // see: http://markdalgleish.com/2011/03/self-executing-anonymous-functions/
@@ -126,6 +140,8 @@ var topbarelementname = "";
         	var eerstereferentie = dereferenties_arr[0];
             console.log(eerstereferentie);
             var amountofreferences = dereferenties_arr.length;
+
+
 
 	        var dereferenties = dereferenties.split(",").join("</span><br/><span class='BijbelVers'>");
 	        $(".bericht_voll").append("<br/ ><h3 class='OpenBijbel-Heading'>Genoemde Bijbelverzen</h3><br/ ><span class='BijbelVers'>" + dereferenties + "</span>");
