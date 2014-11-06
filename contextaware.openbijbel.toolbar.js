@@ -137,7 +137,7 @@ var topbarelementname = "";
 		   $(".OpenBijbel-Heading").css("background","#465DFF").css("font-weight","bold").css("color","white");
 		    $(".BijbelVers").css("background","#BCFFB9");
 			
-			openBijbelToolBar.find(".openbijbelvertaling").append("&nbsp; <span class='referencesamount'>"+ amountofreferences +" Bijbelcitaten gevonden");
+			$(".openbijbelvertaling").append("&nbsp; <span class='referencesamount'>"+ amountofreferences +" Bijbelcitaten gevonden");
 			
 	 		transformReferences("NIV");
 			
