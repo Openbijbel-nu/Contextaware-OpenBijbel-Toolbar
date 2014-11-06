@@ -50,12 +50,6 @@ var topbarelementname = "";
 require('//code.jquery.com/jquery-1.10.2.js');
 require('//code.jquery.com/ui/1.11.2/jquery-ui.js');
 
-$(function() {
-    $( "#biblereferencestray" ).resizable({
-      ghost: true
-    });
-});
-
 $("body").append("<div id='biblereferencestray'><br/><br/></div>");
 $( "#biblereferencestray" ).css({ 
 "position":"fixed",
@@ -68,6 +62,7 @@ $( "#biblereferencestray" ).css({
 "color":"white",
 });
 
+$( "#biblereferencestray" ).resizable();
 	 var BCVParserLoaded = false;
 	/**
  	  * Loads the bcvparser script with a protocol independant URL
