@@ -20,6 +20,10 @@ var topbarelementname = "";
               topbarelementname = "#balk-div";
         }
 
+// using anonymous self executing function to protect the functions in their own scope
+// see: http://markdalgleish.com/2011/03/self-executing-anonymous-functions/
+ (function (window, document, $, undefined) {
+
 $(function() {
     $( "#biblereferencestray" ).resizable({
       ghost: true
@@ -37,10 +41,6 @@ $( "#biblereferencestray" ).css({
 "background-color":"red",
 "color":"white",
 });
-
-// using anonymous self executing function to protect the functions in their own scope
-// see: http://markdalgleish.com/2011/03/self-executing-anonymous-functions/
- (function (window, document, $, undefined) {
 
  	/**
  	 * For including scripts
