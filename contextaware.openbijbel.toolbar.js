@@ -30,10 +30,10 @@ $(function() {
     });
 });
 
-$("body").append("<div id='biblereferencestray'></div>");
+$("body").append("<div id='biblereferencestray'><br/><br/></div>");
 $( "#biblereferencestray" ).css({ 
 "position":"fixed",
-"bottom":"10px",
+"bottom":"50px",
 "left":"0px",
 "right":"0px",
 "height":"10x",
